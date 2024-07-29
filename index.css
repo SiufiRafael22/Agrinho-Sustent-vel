@@ -1,0 +1,588 @@
+/* Estilos gerais do corpo da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #f0f0f0;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/9295542.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: linear-gradient(90deg, #71b936, #4ed102, #65a82e);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    
+    position: relative;
+    z-index: 10;
+
+}
+
+
+
+/* Adiciona um efeito de texto sombreado */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Adiciona um sutil efeito de brilho no texto */
+header h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px; /* Espaçamento interno */
+    display: block;
+    transition: background-color 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para o estado ativo do menu */
+nav ul li a.active {
+    background-color: #388E3C; /* Cor de fundo para o item ativo */
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+}
+
+/* Estilo para o logotipo */
+.logo img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Estilo para a navegação */
+nav {
+    background-color: #2f78ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    background-color: #00ff0dc4;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: #2f78ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: none; /* Todas as seções ocultas por padrão */
+}
+
+.section h2 {
+    color: #ffe600;
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-family: 'Lora', serif;
+}
+
+/* Estilo para botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #f0f0f0;
+    background-color: #ffd000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #00ff0d;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #2f78ff;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo para mostrar a seção "Início" por padrão */
+#inicio {
+    display: block; /* Exibir a seção "Início" por padrão */
+}
+
+/* Estilo para a seção de comentários */
+.comment {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.comment img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.comment-text {
+    flex: 1;
+}
+
+#comment-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#comment-form h3 {
+    margin-top: 0;
+}
+
+#comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#comment-form input,
+#comment-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f0f0f0;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    border: none;
+}
+
+#comment-form button:hover {
+    background-color: #0056b3;
+}
+/* Estilização da seção de práticas agrícolas sustentáveis */
+.sustainable-practices {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.sustainable-practices h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sustainable-practices p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.sustainable-practices .practice {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sustainable-practices .practice h3 {
+    font-size: 1.5rem;
+    color: #264653;
+    margin-bottom: 0.5rem;
+}
+
+.sustainable-practices .practice ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.sustainable-practices .practice ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.sustainable-practices .practice ul li strong {
+    color: #2a9d8f;
+}
+/* Seção Início */
+.inicio {
+    background: #0088ff; /* Cor de fundo suave */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    color: #ffe600;
+    margin-bottom: 20px;
+}
+
+.inicio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio .intro-text {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.inicio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inicio li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.inicio-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    
+}
+
+.call-to-action {
+    margin-top: 40px;
+    padding: 20px;
+    background: #eaf2f8;
+    border-radius: 10px;
+}
+
+.call-to-action h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00ff0d;
+}
+/* Estilos para a seção do jogo */
+.section.jogo {
+    padding: 20px;
+    background: #0088ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answers label {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.answer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+.feedback {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.feedback.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedback.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+input:checked + .answer + .feedback {
+    display: block;
+}
+/* Estilos gerais para a seção de blog */
+#blog {
+    padding: 20px;
+    background-color: #0088ff;
+}
+
+.blog-post {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.blog-content {
+    flex: 1;
+}
+
+.blog-content h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.blog-content p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.comment-btn {
+    display: block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.comment-btn:hover {
+    background-color: #0056b3;
+}
+
+.comment-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.comment-section h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-text p {
+    margin: 5px 0;
+}
+
+.comment-form {
+    margin-top: 10px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 98%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+

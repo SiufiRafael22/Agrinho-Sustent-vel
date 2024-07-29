@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho Sustentável</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Agrinho-Sustent-vel-26-07-2024.png" alt="Agrinho Sustentável">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio" class="menu-btn" onclick="showSection('inicio')">Início</a></li>
+            <li><a href="#objetivo" class="menu-btn" onclick="showSection('objetivo')">Objetivo</a></li>
+            <li><a href="#dicas de sustentabilidade" class="menu-btn" onclick="showSection('dicas de sustentabilidade')">Dicas de sustentabilidade</a></li>
+            <li><a href="#práticas agrícolas sustentáveis" class="menu-btn" onclick="showSection('práticas agrícolas sustentáveis')">Práticas Agrícolas Sustentáveis</a></li>  
+            <li><a href="#jogo" class="menu-btn" onclick="showSection('jogo')">Jogo</a></li>
+            <li><a href="#blog" class="menu-btn" onclick="showSection('blog')">Blog</a></li>
+            <li><a href="#comentarios" class="menu-btn" onclick="showSection('comentarios')">Comentários</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio" class="section inicio">
+            <h2>Bem-vindo ao Agrinho Sustentável!</h2>
+            <div class="inicio-content">
+                <div class="intro-text">
+                    <p>
+                        Agrinho Sustentável é um projeto dedicado a promover práticas agrícolas inovadoras e sustentáveis,
+                        conectando o campo à cidade e contribuindo para um futuro mais verde e próspero. Nosso objetivo é
+                        educar e engajar a comunidade em práticas que preservam o meio ambiente e melhoram a qualidade de vida
+                        de todos.
+                    </p>
+                    <p>
+                        <strong>O Que Oferecemos:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Práticas Ecológicas:</strong> Técnicas que preservam os recursos naturais e promovem um ambiente saudável.</li>
+                        <li><strong>Cultivo de Produtos Orgânicos:</strong> Reduzimos o uso de químicos, oferecendo alimentos mais saudáveis e nutritivos.</li>
+                        <li><strong>Educação e Conscientização:</strong> Programas sobre sustentabilidade e agricultura responsável.</li>
+                        <li><strong>Conexão com a Comunidade:</strong> Iniciativas que conectam produtores e consumidores em um ciclo sustentável.</li>
+                    </ul>
+                </div>
+                <div class="inicio-image">
+                    <img src="img/Agrinho-Sustent-vel-26-07-2024.png" alt="Imagem do Projeto">
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="jogo" class="section jogo">
+            <h2>Quiz de Sustentabilidade</h2>
+            <div class="quiz-container">
+                <div class="question">
+                    <p>1. Qual é uma prática agrícola sustentável?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio" name="q1" id="q1a1" class="hidden" />
+                            <span class="answer">Uso excessivo de pesticidas</span>
+                            <div class="feedback incorrect">Incorreto. O uso excessivo de pesticidas não é uma prática sustentável.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" id="q1a2" class="hidden" />
+                            <span class="answer">Cultivo de plantas nativas</span>
+                            <div class="feedback correct">Correto! O cultivo de plantas nativas é uma prática sustentável.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" id="q1a3" class="hidden" />
+                            <span class="answer">Desmatamento</span>
+                            <div class="feedback incorrect">Incorreto. O desmatamento não é uma prática sustentável.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" id="q1a4" class="hidden" />
+                            <span class="answer">Uso de fertilizantes químicos</span>
+                            <div class="feedback incorrect">Incorreto. O uso de fertilizantes químicos não é uma prática sustentável.</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. O que é compostagem?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio" name="q2" id="q2a1" class="hidden" />
+                            <span class="answer">Uso de produtos químicos para acelerar o crescimento das plantas</span>
+                            <div class="feedback incorrect">Incorreto. Compostagem é a decomposição de matéria orgânica.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" id="q2a2" class="hidden" />
+                            <span class="answer">Decomposição de matéria orgânica para criar adubo</span>
+                            <div class="feedback correct">Correto! Compostagem é a decomposição de matéria orgânica para criar adubo.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" id="q2a3" class="hidden" />
+                            <span class="answer">Plantio de monoculturas</span>
+                            <div class="feedback incorrect">Incorreto. Compostagem não tem relação com monoculturas.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" id="q2a4" class="hidden" />
+                            <span class="answer">Uso de água em excesso</span>
+                            <div class="feedback incorrect">Incorreto. Compostagem não é sobre uso de água.</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>3. Qual é um benefício do cultivo de produtos orgânicos?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio" name="q3" id="q3a1" class="hidden" />
+                            <span class="answer">Uso de pesticidas sintéticos</span>
+                            <div class="feedback incorrect">Incorreto. Produtos orgânicos não utilizam pesticidas sintéticos.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" id="q3a2" class="hidden" />
+                            <span class="answer">Excesso de fertilizantes químicos</span>
+                            <div class="feedback incorrect">Incorreto. Produtos orgânicos não usam excesso de fertilizantes químicos.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" id="q3a3" class="hidden" />
+                            <span class="answer">Menor impacto ambiental e maior valor nutricional</span>
+                            <div class="feedback correct">Correto! Produtos orgânicos têm menor impacto ambiental e maior valor nutricional.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" id="q3a4" class="hidden" />
+                            <span class="answer">Diminuição da biodiversidade</span>
+                            <div class="feedback incorrect">Incorreto. O cultivo de produtos orgânicos promove a biodiversidade.</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. Qual é uma vantagem da rotação de culturas?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio" name="q4" id="q4a1" class="hidden" />
+                            <span class="answer">Aumento da resistência a pragas e doenças</span>
+                            <div class="feedback correct">Correto! A rotação de culturas pode aumentar a resistência a pragas e doenças.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" id="q4a2" class="hidden" />
+                            <span class="answer">Redução da fertilidade do solo</span>
+                            <div class="feedback incorrect">Incorreto. A rotação de culturas ajuda a manter a fertilidade do solo.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" id="q4a3" class="hidden" />
+                            <span class="answer">Uso excessivo de fertilizantes</span>
+                            <div class="feedback incorrect">Incorreto. A rotação de culturas não implica o uso excessivo de fertilizantes.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" id="q4a4" class="hidden" />
+                            <span class="answer">Desmatamento</span>
+                            <div class="feedback incorrect">Incorreto. A rotação de culturas não tem relação com desmatamento.</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5. O que é agricultura de precisão?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio" name="q5" id="q5a1" class="hidden" />
+                            <span class="answer">Uso de tecnologia para aplicar insumos de forma precisa</span>
+                            <div class="feedback correct">Correto! Agricultura de precisão usa tecnologia para aplicar insumos de forma precisa.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" id="q5a2" class="hidden" />
+                            <span class="answer">Plantio em monoculturas extensivas</span>
+                            <div class="feedback incorrect">Incorreto. Agricultura de precisão não se refere ao plantio em monoculturas extensivas.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" id="q5a3" class="hidden" />
+                            <span class="answer">Uso indiscriminado de pesticidas</span>
+                            <div class="feedback incorrect">Incorreto. Agricultura de precisão visa reduzir o uso indiscriminado de pesticidas.</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" id="q5a4" class="hidden" />
+                            <span class="answer">Desmatamento para expansão agrícola</span>
+                            <div class="feedback incorrect">Incorreto. Agricultura de precisão não está relacionada com desmatamento.</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        
+        
+        <section id="objetivo" class="section">
+            <h2>Objetivo</h2>
+            <p>
+                No <strong>Agrinho Sustentável</strong>, nosso principal objetivo é promover e implementar práticas agrícolas que equilibrem a produtividade com a preservação ambiental. Queremos conectar os conhecimentos do campo com as necessidades e interesses da cidade, criando um ciclo sustentável que beneficie tanto os produtores quanto os consumidores.
+            </p>
+            <h3>Nossos Objetivos Principais:</h3>
+            <ul>
+                <li><strong>Promoção de Práticas Sustentáveis:</strong> Incentivar técnicas agrícolas que minimizem o impacto ambiental, preservando a biodiversidade e os recursos naturais para as futuras gerações.</li>
+                <li><strong>Educação e Conscientização:</strong> Oferecer programas educacionais para aumentar a conscientização sobre a importância da agricultura sustentável e os benefícios dos produtos orgânicos.</li>
+                <li><strong>Fomento ao Cultivo Orgânico:</strong> Facilitar a transição para métodos de cultivo que eliminem o uso de químicos nocivos, proporcionando alimentos mais saudáveis e seguros para a comunidade.</li>
+                <li><strong>Fortalecimento da Comunidade:</strong> Criar uma rede de produtores e consumidores comprometidos com a sustentabilidade, promovendo práticas que favoreçam o desenvolvimento econômico e social.</li>
+                <li><strong>Inovação e Tecnologia:</strong> Incorporar novas tecnologias e práticas inovadoras que aumentem a eficiência agrícola e reduzam os impactos negativos ao meio ambiente.</li>
+            </ul>
+            <p>
+                Estamos empenhados em fazer uma diferença significativa e positiva no mundo da agricultura. Junte-se a nós nessa jornada para transformar a forma como cultivamos e consumimos, promovendo um futuro mais verde e sustentável para todos.
+            </p>
+        </section>
+        
+        <section id="dicas de sustentabilidade" class="section">
+            <h2>Dicas de sustentabilidade</h2>
+            <div class="tips">
+                <h3>Como Reduzir o Desperdício de Alimentos</h3>
+                <p>Compre apenas o necessário, aproveite sobras e armazene alimentos corretamente. Aqui estão algumas ideias:</p>
+                <ul>
+                    <li><strong>Planeje suas refeições:</strong> Faça uma lista de compras baseada no que você realmente precisa para evitar compras impulsivas.</li>
+                    <li><strong>Armazene alimentos corretamente:</strong> Utilize recipientes herméticos para manter a frescura dos alimentos e evite que estraguem rapidamente.</li>
+                    <li><strong>Aproveite as sobras:</strong> Crie novas receitas com sobras de refeições anteriores. Sopas, ensopados e omeletes são ótimas opções.</li>
+                </ul>
+
+                <h3>Economize Água</h3>
+                <p>Feche a torneira enquanto escova os dentes, conserte vazamentos e reutilize água sempre que possível. Outras dicas incluem:</p>
+                <ul>
+                    <li><strong>Instale redutores de vazão:</strong> Economize água em chuveiros e torneiras com dispositivos que reduzem a quantidade de água usada sem comprometer o desempenho.</li>
+                    <li><strong>Reutilize água da chuva:</strong> Colete água da chuva para regar plantas e lavar o quintal.</li>
+                    <li><strong>Use a máquina de lavar com carga completa:</strong> Evite lavar pequenas quantidades de roupa para economizar água e energia.</li>
+                </ul>
+
+                <h3>Use Energia de Forma Eficiente</h3>
+                <p>Desligue aparelhos eletrônicos quando não estiverem em uso e opte por lâmpadas de LED. Aqui estão mais algumas dicas:</p>
+                <ul>
+                    <li><strong>Desconecte carregadores:</strong> Desconecte carregadores de dispositivos quando não estiverem em uso, pois continuam consumindo energia.</li>
+                    <li><strong>Aproveite a luz natural:</strong> Abra as cortinas e aproveite a luz do dia para reduzir a necessidade de iluminação artificial.</li>
+                    <li><strong>Use termostatos programáveis:</strong> Controle a temperatura da sua casa de forma eficiente para economizar energia de aquecimento e resfriamento.</li>
+                </ul>
+
+                <h3>Pratique a Reciclagem</h3>
+                <p>Separe resíduos recicláveis e descarte corretamente. Aqui estão mais algumas práticas:</p>
+                <ul>
+                    <li><strong>Recicle eletrônicos:</strong> Leve seus dispositivos eletrônicos antigos a pontos de coleta específicos para reciclagem.</li>
+                    <li><strong>Composte resíduos orgânicos:</strong> Transforme restos de alimentos e resíduos do jardim em composto para enriquecer o solo.</li>
+                    <li><strong>Reduza o uso de plásticos:</strong> Opte por embalagens reutilizáveis e evite produtos descartáveis.</li>
+                </ul>
+
+                <h3>Transporte Sustentável</h3>
+                <p>Adote hábitos de transporte que reduzam a emissão de gases poluentes e promovam a sustentabilidade:</p>
+                <ul>
+                    <li><strong>Use transporte público:</strong> Sempre que possível, opte por ônibus, metrô ou trem para reduzir o número de veículos nas ruas.</li>
+                    <li><strong>Compartilhe caronas:</strong> Divida o carro com amigos ou colegas de trabalho para diminuir o consumo de combustível e as emissões de CO2.</li>
+                    <li><strong>Ande de bicicleta ou caminhe:</strong> Para trajetos curtos, opte por ir a pé ou de bicicleta, beneficiando sua saúde e o meio ambiente.</li>
+                </ul>
+
+                <h3>Consumo Consciente</h3>
+                <p>Adote um estilo de vida mais sustentável fazendo escolhas conscientes na hora de consumir produtos e serviços:</p>
+                <ul>
+                    <li><strong>Priorize produtos locais:</strong> Apoie produtores locais e reduza a pegada de carbono associada ao transporte de mercadorias.</li>
+                    <li><strong>Opte por produtos ecológicos:</strong> Prefira itens feitos com materiais sustentáveis e práticas de produção responsáveis.</li>
+                    <li><strong>Reduza o consumo:</strong> Reflita sobre suas reais necessidades antes de comprar e evite o consumo excessivo e o desperdício.</li>
+                </ul>
+                <h3>Reduza o Consumo de Energia</h3>
+<p>Minimize o uso de energia em sua casa e no trabalho. Aqui estão algumas sugestões:</p>
+<ul>
+    <li><strong>Utilize aparelhos eficientes:</strong> Opte por eletrodomésticos com selo de eficiência energética, como o selo Procel.</li>
+    <li><strong>Isolamento térmico:</strong> Melhore o isolamento da sua casa para reduzir a necessidade de aquecimento e resfriamento.</li>
+    <li><strong>Calefação e climatização:</strong> Ajuste o termostato para temperaturas moderadas e mantenha os filtros do ar limpos.</li>
+</ul>
+
+<h3>Cuide da Biodiversidade</h3>
+<p>Proteja e promova a biodiversidade ao seu redor com estas práticas:</p>
+<ul>
+    <li><strong>Plante árvores:</strong> As árvores ajudam a combater a poluição e oferecem habitats para muitas espécies.</li>
+    <li><strong>Crie jardins nativos:</strong> Plante espécies nativas que atraem polinizadores e são adaptadas ao clima local.</li>
+    <li><strong>Evite produtos químicos:</strong> Reduza o uso de pesticidas e fertilizantes químicos que podem prejudicar a fauna e flora local.</li>
+</ul>
+
+<h3>Adote Práticas de Construção Sustentável</h3>
+<p>Ao construir ou reformar, considere as seguintes práticas sustentáveis:</p>
+<ul>
+    <li><strong>Use materiais ecológicos:</strong> Escolha materiais de construção que são reciclados ou de fontes renováveis.</li>
+    <li><strong>Eficiência na construção:</strong> Projetos que utilizam técnicas de construção sustentável podem economizar energia e recursos a longo prazo.</li>
+    <li><strong>Águas cinzas:</strong> Reutilize águas cinzas de lavatórios e chuveiros para irrigação e outros usos não potáveis.</li>
+</ul>
+
+<h3>Consumo Responsável de Água</h3>
+<p>Reduza o consumo de água em seu dia a dia com essas dicas:</p>
+<ul>
+    <li><strong>Use chuveiros eficientes:</strong> Instale chuveiros que utilizam menos água sem comprometer a experiência do banho.</li>
+    <li><strong>Conserte vazamentos:</strong> Verifique regularmente se há vazamentos em torneiras e encanamentos e repare-os imediatamente.</li>
+    <li><strong>Captação de água da chuva:</strong> Instale sistemas de captação para usar água da chuva em atividades de jardinagem e limpeza.</li>
+</ul>
+
+<h3>Práticas Alimentares Sustentáveis</h3>
+<p>Adote hábitos alimentares que favorecem a sustentabilidade:</p>
+<ul>
+    <li><strong>Coma mais vegetais:</strong> Reduza o consumo de carne e inclua mais vegetais e leguminosas em sua dieta.</li>
+    <li><strong>Escolha produtos orgânicos:</strong> Prefira alimentos cultivados sem o uso de pesticidas e fertilizantes sintéticos.</li>
+    <li><strong>Evite alimentos processados:</strong> Alimentos processados têm um impacto ambiental maior devido à produção e embalagens.</li>
+</ul>
+
+<h3>Gestão de Resíduos</h3>
+<p>Melhore a gestão de resíduos em sua casa e comunidade:</p>
+<ul>
+    <li><strong>Segregue seus resíduos:</strong> Separe os resíduos recicláveis dos não recicláveis e compostáveis.</li>
+    <li><strong>Reduza o uso de embalagens:</strong> Escolha produtos com menos embalagens e preferencialmente embalagens recicláveis.</li>
+    <li><strong>Recicle papel e papelão:</strong> Recicle papel e papelão para reduzir a demanda por recursos naturais e economizar energia.</li>
+</ul>
+
+<h3>Economia Circular</h3>
+<p>Adote princípios da economia circular para reduzir o desperdício:</p>
+<ul>
+    <li><strong>Repare e reutilize:</strong> Antes de descartar itens, verifique se eles podem ser consertados ou reutilizados.</li>
+    <li><strong>Compre produtos de segunda mão:</strong> Dê uma nova vida a produtos usados e reduza a demanda por novos itens.</li>
+    <li><strong>Promova a reciclagem:</strong> Incentive a reciclagem e a upcycling de produtos e materiais em sua comunidade.</li>
+</ul>
+<h3>Reduza o Uso de Plásticos</h3>
+<p>Minimize o uso de plásticos descartáveis com estas ações:</p>
+<ul>
+    <li><strong>Use sacolas reutilizáveis:</strong> Leve suas próprias sacolas para as compras e evite sacolas plásticas.</li>
+    <li><strong>Substitua utensílios de plástico:</strong> Utilize utensílios de cozinha feitos de materiais sustentáveis, como bambu ou metal.</li>
+    <li><strong>Evite embalagens plásticas:</strong> Opte por produtos com embalagens recicláveis ou sem embalagem sempre que possível.</li>
+</ul>
+
+<h3>Eficiência no Transporte</h3>
+<p>Maximize a eficiência e reduza o impacto ambiental do transporte:</p>
+<ul>
+    <li><strong>Carros elétricos:</strong> Considere a compra de um veículo elétrico ou híbrido para reduzir emissões de gases.</li>
+    <li><strong>Transporte alternativo:</strong> Explore opções como patinetes elétricos e carros compartilhados para reduzir o uso de veículos pessoais.</li>
+    <li><strong>Planeje rotas:</strong> Planeje suas rotas para minimizar a distância percorrida e economizar combustível.</li>
+</ul>
+
+<h3>Conserve Recursos Naturais</h3>
+<p>Proteja os recursos naturais com práticas conscientes:</p>
+<ul>
+    <li><strong>Reduza o consumo de papel:</strong> Prefira documentos digitais e minimize a impressão de papéis.</li>
+    <li><strong>Economize energia em casa:</strong> Utilize timers e sensores para controlar o uso de energia em diferentes ambientes.</li>
+    <li><strong>Proteja áreas naturais:</strong> Participe de iniciativas para conservar parques e reservas naturais.</li>
+</ul>
+
+<h3>Invista em Tecnologias Verdes</h3>
+<p>Adote tecnologias que promovam a sustentabilidade:</p>
+<ul>
+    <li><strong>Painéis solares:</strong> Instale painéis solares para gerar sua própria energia e reduzir a dependência de fontes não renováveis.</li>
+    <li><strong>Fontes de energia renovável:</strong> Considere outras fontes de energia renovável, como turbinas eólicas ou biomassa.</li>
+    <li><strong>Equipamentos eficientes:</strong> Utilize equipamentos e tecnologias que economizem recursos e reduzam o impacto ambiental.</li>
+</ul>
+
+<h3>Reduza o Desperdício de Recursos em Eventos</h3>
+<p>Organize eventos sustentáveis com estas práticas:</p>
+<ul>
+    <li><strong>Evite descartáveis:</strong> Use utensílios reutilizáveis em vez de descartáveis em eventos e festas.</li>
+    <li><strong>Recicle durante eventos:</strong> Disponibilize recipientes de reciclagem e compostagem para os participantes.</li>
+    <li><strong>Planeje o catering:</strong> Calcule a quantidade de alimentos de acordo com o número de convidados para evitar desperdícios.</li>
+</ul>
+
+<h3>Eduque e Engaje sua Comunidade</h3>
+<p>Inspire e envolva outros em práticas sustentáveis:</p>
+<ul>
+    <li><strong>Organize workshops:</strong> Promova workshops sobre sustentabilidade e práticas ecológicas em sua comunidade.</li>
+    <li><strong>Compartilhe informações:</strong> Utilize redes sociais e outros meios para divulgar dicas e informações sobre sustentabilidade.</li>
+    <li><strong>Participe de iniciativas locais:</strong> Envolva-se em projetos e grupos que promovam a sustentabilidade em sua área.</li>
+</ul>
+
+<h3>Utilize Produtos de Beleza Sustentáveis</h3>
+<p>Faça escolhas conscientes ao selecionar produtos de beleza:</p>
+<ul>
+    <li><strong>Escolha cosméticos naturais:</strong> Opte por produtos de beleza que utilizam ingredientes naturais e são livres de químicos agressivos.</li>
+    <li><strong>Use embalagens recicláveis:</strong> Prefira produtos com embalagens que possam ser recicladas ou reutilizadas.</li>
+    <li><strong>Evite produtos com microplásticos:</strong> Escolha cosméticos sem microplásticos, que podem poluir os oceanos e afetar a vida marinha.</li>
+</ul>
+
+
+            </div>
+        </section>
+        <section section id="práticas agrícolas sustentáveis" class="section">
+            <h2>Práticas Agrícolas Sustentáveis</h2>
+            <p>Adote práticas agrícolas que preservam o meio ambiente e melhoram a qualidade do solo. Aqui estão algumas sugestões:</p>
+        
+            <div class="practice">
+                <h3>Rotação de Culturas</h3>
+                <p>Evite o cultivo contínuo da mesma planta na mesma área para manter a saúde do solo e reduzir a necessidade de fertilizantes químicos:</p>
+                <ul>
+                    <li><strong>Alterne diferentes tipos de culturas:</strong> Mude os tipos de culturas cultivadas em cada área a cada temporada.</li>
+                    <li><strong>Utilize culturas de cobertura:</strong> Plante culturas de cobertura para proteger e melhorar a qualidade do solo entre as safras principais.</li>
+                    <li><strong>Incorpore leguminosas:</strong> Adicione leguminosas à rotação para melhorar a fertilidade do solo através da fixação de nitrogênio.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Uso Eficiente da Água</h3>
+                <p>Gerencie o uso da água para evitar o desperdício e garantir a disponibilidade para todas as culturas:</p>
+                <ul>
+                    <li><strong>Adote sistemas de irrigação eficiente:</strong> Utilize técnicas como irrigação por gotejamento ou aspersão para reduzir o consumo de água.</li>
+                    <li><strong>Coleta e armazenamento de água da chuva:</strong> Capture água da chuva para utilizar na irrigação das culturas.</li>
+                    <li><strong>Monitore a umidade do solo:</strong> Use sensores para monitorar a umidade e ajustar a irrigação conforme a necessidade.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Controle de Pragas e Doenças</h3>
+                <p>Use métodos naturais e menos agressivos para controlar pragas e doenças:</p>
+                <ul>
+                    <li><strong>Controle biológico:</strong> Introduza predadores naturais ou parasitas para controlar as populações de pragas.</li>
+                    <li><strong>Plantas companheiras:</strong> Utilize plantas que repelam pragas ou promovam o crescimento de culturas vizinhas.</li>
+                    <li><strong>Rotação e diversificação:</strong> Altere o local de cultivo para prevenir a proliferação de pragas e doenças específicas.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Preservação da Biodiversidade</h3>
+                <p>Contribua para a preservação da biodiversidade e a saúde do ecossistema agrícola:</p>
+                <ul>
+                    <li><strong>Crie áreas de habitat:</strong> Mantenha áreas de vegetação natural, como faixas de vegetação nativa e corredores ecológicos.</li>
+                    <li><strong>Promova a polinização:</strong> Plante flores e ervas que atraem polinizadores para melhorar a produtividade das culturas.</li>
+                    <li><strong>Proteja espécies nativas:</strong> Preserve a flora e fauna nativas da região para manter o equilíbrio ecológico.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Uso Sustentável de Fertilizantes</h3>
+                <p>Otimize o uso de fertilizantes para reduzir o impacto ambiental:</p>
+                <ul>
+                    <li><strong>Utilize adubação orgânica:</strong> Prefira compostagem e estrume natural em vez de fertilizantes químicos.</li>
+                    <li><strong>Faça análises de solo:</strong> Realize análises regulares para ajustar a quantidade e o tipo de fertilizante necessário.</li>
+                    <li><strong>Adote a fertirrigação:</strong> Combine a irrigação com a aplicação de fertilizantes para melhorar a eficiência.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Práticas de Conservação do Solo</h3>
+                <p>Proteja o solo contra erosão e degradação:</p>
+                <ul>
+                    <li><strong>Utilize técnicas de cultivo mínimo:</strong> Reduza o revolvimento do solo para preservar sua estrutura e a biodiversidade microbiana.</li>
+                    <li><strong>Construa terraços:</strong> Crie terraços em áreas inclinadas para controlar a erosão e melhorar a retenção de água.</li>
+                    <li><strong>Plante cobertura vegetal:</strong> Mantenha uma camada de vegetação no solo para proteger contra a erosão e melhorar a fertilidade.</li>
+                </ul>
+            </div>
+        
+            <div class="practice">
+                <h3>Redução do Uso de Produtos Químicos</h3>
+                <p>Minimize o uso de produtos químicos prejudiciais ao meio ambiente e à saúde:</p>
+                <ul>
+                    <li><strong>Adote práticas de manejo integrado:</strong> Combine diferentes métodos de controle de pragas e doenças para reduzir a dependência de químicos.</li>
+                    <li><strong>Use produtos naturais:</strong> Opte por pesticidas e herbicidas naturais ou orgânicos quando necessário.</li>
+                    <li><strong>Monitore e ajuste:</strong> Aplique produtos químicos somente quando necessário e siga as recomendações para evitar excesso.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="comentarios" class="section">
+            <h2>Comentários</h2>
+            <div id="comments">
+                <div class="comment">
+                    <img src="img/maria.jpg" alt="Maria Silva">
+                    <div class="comment-text">
+                        <p><strong>Maria Silva</strong></p>
+                        <p>Participar do projeto Agrinho Sustentável mudou minha vida. Aprendi sobre práticas agrícolas sustentáveis que aumentaram minha produção e melhoraram a qualidade dos meus produtos. Além disso, conheci pessoas incríveis e fiz amigos para a vida toda.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="img/joao.jpg" alt="João Pereira">
+                    <div class="comment-text">
+                        <p><strong>João Pereira</strong></p>
+                        <p>O Agrinho Sustentável me ensinou a importância de preservar o meio ambiente. Agora, aplico técnicas ecológicas na minha fazenda e vejo os benefícios não apenas para a natureza, mas também para minha família e comunidade.</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="img/ana.jpg" alt="Ana Souza">
+                    <div class="comment-text">
+                        <p><strong>Ana Souza</strong></p>
+                        <p>Nunca imaginei que um projeto poderia fazer tanta diferença. O Agrinho Sustentável me deu as ferramentas e o conhecimento necessários para transformar minha propriedade e minha vida. Sou eternamente grata por essa oportunidade.</p>
+                    </div>
+                </div>
+            </div>
+            <form id="comment-form">
+                <h3>Deixe seu comentário</h3>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+        
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <article class="blog-post">
+                <img src="img/pedro.jpg" alt="Pedro Oliveira">
+                <div class="blog-content">
+                    <h3>Transformando o Campo com Técnicas Sustentáveis</h3>
+                    <p><strong>Autor: Pedro Oliveira</strong></p>
+                    <p>Descubra como Pedro Oliveira, um agricultor dedicado, transformou sua fazenda utilizando técnicas sustentáveis ensinadas pelo Agrinho Sustentável. Ele compartilha suas experiências e resultados incríveis.</p>
+                    <button class="comment-btn" onclick="toggleCommentSection('comment-section-1')">Comentários</button>
+                    <div id="comment-section-1" class="comment-section">
+                        <h4>Comentários</h4>
+                        <div class="comment">
+                            <img src="img/maria.jpg" alt="Maria Silva">
+                            <div class="comment-text">
+                                <p><strong>Maria Silva</strong></p>
+                                <p>Incrível transformação, Pedro! Suas conquistas são inspiradoras.</p>
+                            </div>
+                        </div>
+                        <form class="comment-form">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name-1" name="name" required>
+                            <label for="comment">Comentário:</label>
+                            <textarea id="comment-1" name="comment" rows="4" required></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img src="img/clara.avif" alt="Clara Martins">
+                <div class="blog-content">
+                    <h3>A Importância da Educação Ambiental</h3>
+                    <p><strong>Autor: Clara Martins</strong></p>
+                    <p>Clara Martins, educadora ambiental, discute a importância da educação ambiental nas escolas e comunidades. Ela destaca como o Agrinho Sustentável está contribuindo para essa causa.</p>
+                    <button class="comment-btn" onclick="toggleCommentSection('comment-section-2')">Comentários</button>
+                    <div id="comment-section-2" class="comment-section">
+                        <h4>Comentários</h4>
+                        <div class="comment">
+                            <img src="img/joao.jpg" alt="João Pereira">
+                            <div class="comment-text">
+                                <p><strong>João Pereira</strong></p>
+                                <p>Concordo plenamente, Clara! A educação ambiental é fundamental para um futuro sustentável.</p>
+                            </div>
+                        </div>
+                        <form class="comment-form">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name-2" name="name" required>
+                            <label for="comment">Comentário:</label>
+                            <textarea id="comment-2" name="comment" rows="4" required></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img src="img/lucas.avif" alt="Lucas Ferreira">
+                <div class="blog-content">
+                    <h3>Benefícios dos Produtos Orgânicos</h3>
+                    <p><strong>Autor: Lucas Ferreira</strong></p>
+                    <p>Lucas Ferreira, nutricionista, explica os benefícios dos produtos orgânicos para a saúde e o meio ambiente. Ele compartilha dicas sobre como incorporar esses produtos na dieta diária.</p>
+                    <button class="comment-btn" onclick="toggleCommentSection('comment-section-3')">Comentários</button>
+                    <div id="comment-section-3" class="comment-section">
+                        <h4>Comentários</h4>
+                        <div class="comment">
+                            <img src="img/ana.jpg" alt="Ana Souza">
+                            <div class="comment-text">
+                                <p><strong>Ana Souza</strong></p>
+                                <p>Ótimas dicas, Lucas! Produtos orgânicos realmente fazem a diferença na nossa saúde.</p>
+                            </div>
+                        </div>
+                        <form class="comment-form">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name-3" name="name" required>
+                            <label for="comment">Comentário:</label>
+                            <textarea id="comment-3" name="comment" rows="4" required></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agrinho Sustentável</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        // Mostrar a seção "Início" por padrão
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('inicio');
+        });
+
+        // Função para adicionar um novo comentário
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+
+            var newComment = document.createElement('div');
+            newComment.classList.add('comment');
+
+            var img = document.createElement('img');
+            img.src = 'img/eu.jpg';
+            img.alt = name;
+
+            var commentText = document.createElement('div');
+            commentText.classList.add('comment-text');
+
+            var nameParagraph = document.createElement('p');
+            var strong = document.createElement('strong');
+            strong.textContent = name;
+            nameParagraph.appendChild(strong);
+
+            var commentParagraph = document.createElement('p');
+            commentParagraph.textContent = comment;
+
+            commentText.appendChild(nameParagraph);
+            commentText.appendChild(commentParagraph);
+
+            newComment.appendChild(img);
+            newComment.appendChild(commentText);
+
+            document.getElementById('comments').appendChild(newComment);
+
+            // Limpar formulário
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+
+        // Função para alternar a visibilidade da seção de comentários de um post do blog
+        function toggleCommentSection(commentSectionId) {
+            var commentSection = document.getElementById(commentSectionId);
+            if (commentSection.style.display === 'block') {
+                commentSection.style.display = 'none';
+            } else {
+                commentSection.style.display = 'block';
+            }
+        }
+
+        // Função para adicionar comentários nos posts do blog
+        document.querySelectorAll('.comment-form').forEach(function(form) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                var name = this.querySelector('input[name="name"]').value;
+                var comment = this.querySelector('textarea[name="comment"]').value;
+
+                var newComment = document.createElement('div');
+                newComment.classList.add('comment');
+
+                var img = document.createElement('img');
+                img.src = 'img/eu.jpg';
+                img.alt = name;
+
+                var commentText = document.createElement('div');
+                commentText.classList.add('comment-text');
+
+                var nameParagraph = document.createElement('p');
+                var strong = document.createElement('strong');
+                strong.textContent = name;
+                nameParagraph.appendChild(strong);
+
+                var commentParagraph = document.createElement('p');
+                commentParagraph.textContent = comment;
+
+                commentText.appendChild(nameParagraph);
+                commentText.appendChild(commentParagraph);
+
+                newComment.appendChild(img);
+                newComment.appendChild(commentText);
+
+                this.parentNode.insertBefore(newComment, this);
+
+                // Limpar formulário
+                this.querySelector('input[name="name"]').value = '';
+                this.querySelector('textarea[name="comment"]').value = '';
+            });
+        });
+    </script>
+</body>
+</html>
